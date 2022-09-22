@@ -1,6 +1,19 @@
 function reverseString(str) {
-  // type your code here
+  // create new variable that contains result
+  let newStr = "";
+  // iterate through the length of the original string minus 1, to start with the last character and go backwards until the first character is reached
+  for (let i = str.length-1; i >= 0; i--) {
+    // store each character back into our new variable, with every single index that we encounter
+    newStr += str[i];
+  }
+  // result stored in the new variable that gets returned
+   return newStr
 }
+
+// Second Solution: 
+// function reverseString(str) {
+//    return str.split("").reverse().join("")
+//}
 
 if (require.main === module) {
   // add your own tests in here
